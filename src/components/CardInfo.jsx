@@ -2,8 +2,8 @@
 import '../App.css';
 import React, { useState} from 'react'
 
-const CardInfo = ({item}) => {
-  const [resData,setResData] = useState([]);
+const CardInfo = ({item, resData}) => {
+  
   const [readStatus, setReadStatus] = useState(false)
   
   
@@ -39,8 +39,8 @@ function handleReadInfo(){
                         <h4>Ingredients:</h4>
                         <ul>
                             {
-                                resData && item.ingredients && item.ingredients.map(e =>{
-                                    return <li>{e}</li>
+                                resData && item.ingredients && item.ingredients.map(ingredient =>{
+                                    return <li>{ingredient}</li>
                                 })
                             }
                         </ul>
@@ -49,8 +49,8 @@ function handleReadInfo(){
                         <h4>Instructions:</h4>
                         <ul>
                             {
-                                resData && item.instructions && item.ingredients.map(e =>{
-                                    return <li>{e}</li>
+                                resData && item.instructions && item.instructions.map(instruction =>{
+                                    return <li>{instruction}</li>
                                 })
                             }
                         </ul>
