@@ -12,14 +12,14 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
     background-color: rgb(241, 232, 202);
     margin-left: 10px;
 }
 .card{
     background-color: white;
-    width: 85%;
+    width: 95%;
     padding: 10px;
     border-radius: 20px;
     display: flex;
@@ -40,10 +40,15 @@ body{
     border-radius: 25px;
     width: 80%;
     padding: 10px;
+    padding-top: 0;
     
+}
+.card .details div{
+    margin-bottom: -15px;
 }
 .card h4{
     color: rgb(134, 62, 38);
+
 }
 .card .less{
     
